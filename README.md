@@ -47,6 +47,6 @@ manager.setAudioParameters(44100, AudioFormat.ENCODING_PCM_16BIT,AudioFormat.CHA
  |  MicManager.MODE_PLAY_FILE   |  播放录音文件模式     |
 
 
-### Contact me
+## Contact me
 E-mail:1262135886@qq.com<br>
 CSDN blog address:http://blog.csdn.net/qq_33750826
