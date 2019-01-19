@@ -9,13 +9,13 @@ AudioRecord &amp;&amp; AudioTrack Demo
 
 
 ### 怎么使用?
-#第一步，实例化
+# 第一步，实例化
 ```java
 private MicManager manager=null;
 manager=MicManager.getInstance();
 ```
 
-#第二步，设置音频参数（默认参数是16k,16bit,单声道）
+# 第二步，设置音频参数（默认参数是16k,16bit,单声道）
 ```java
 private MicManager manager=null;
 /**
@@ -26,7 +26,7 @@ private MicManager manager=null;
 manager.setAudioParameters(44100, AudioFormat.ENCODING_PCM_16BIT,AudioFormat.CHANNEL_IN_STEREO);
 ```
 
-#第三步，功能使用
+# 第三步，功能使用
 > 边录边播 `manager.startRecord(MicManager.MODE_OUT_MIC);`
 
 > 录音保存至文件 `manager.startRecord(MicManager.MODE_RECORD_FILE);`
@@ -38,8 +38,12 @@ manager.setAudioParameters(44100, AudioFormat.ENCODING_PCM_16BIT,AudioFormat.CHA
 > 停止播放录音文件 `manager.stopPlay();`
 
 > 获取当前的状态 `manager.getOperationStatus();`
- | 状态值 |:-----------------|  MicManager.MODE_DEFAULT   | MicManager.MODE_OUT_MIC |  MicManager.MODE_RECORD_FILE | MicManager.MODE_PLAY_FILE |
- | 含义   |:-----------------|  默认状态                  | 边录边播模式            |  录音保存至文件模式          | 播放录音文件模式          | 
+ |  状态值                      |  含义                |
+ |:-----------------------------|:---------------------|
+ |  MicManager.MODE_DEFAULT     |  默认状态            |
+ |  MicManager.MODE_OUT_MIC     |  边录边播模式        |
+ |  MicManager.MODE_RECORD_FILE |  录音保存至文件模式   |
+ |  MicManager.MODE_PLAY_FILE   |  播放录音文件模式     |
 
 
 ### Contact me
