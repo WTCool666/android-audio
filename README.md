@@ -38,6 +38,7 @@ manager.setAudioParameters(44100, AudioFormat.ENCODING_PCM_16BIT,AudioFormat.CHA
 > 停止播放录音文件 `manager.stopPlay();`
 
 > 获取当前的状态 `manager.getOperationStatus();`
+
  |  状态值                      |  含义                |
  |:----------------------------- |:--------------------- |
  |  MicManager.MODE_DEFAULT     |  默认状态            |
