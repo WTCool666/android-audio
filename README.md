@@ -1,21 +1,21 @@
 # android-audio
 AudioRecord &amp;&amp; AudioTrack Demo
 
-### 功能
+## 功能
 * [x] 支持播放参数设置（默认参数是16k,16bit,单声道）
 * [x] 支持边录音边播放
 * [x] 支持录音保存文件
 * [x] 支持播放录音文件
 
 
-### 怎么使用?
-# 第一步，实例化
+## 怎么使用?
+#### 第一步，实例化
 ```java
 private MicManager manager=null;
 manager=MicManager.getInstance();
 ```
 
-# 第二步，设置音频参数（默认参数是16k,16bit,单声道）
+#### 第二步，设置音频参数（默认参数是16k,16bit,单声道）
 ```java
 private MicManager manager=null;
 /**
@@ -26,7 +26,7 @@ private MicManager manager=null;
 manager.setAudioParameters(44100, AudioFormat.ENCODING_PCM_16BIT,AudioFormat.CHANNEL_IN_STEREO);
 ```
 
-# 第三步，功能使用
+####  第三步，功能使用
 > 边录边播 `manager.startRecord(MicManager.MODE_OUT_MIC);`
 
 > 录音保存至文件 `manager.startRecord(MicManager.MODE_RECORD_FILE);`
@@ -39,7 +39,7 @@ manager.setAudioParameters(44100, AudioFormat.ENCODING_PCM_16BIT,AudioFormat.CHA
 
 > 获取当前的状态 `manager.getOperationStatus();`
  |  状态值                      |  含义                |
- |:-----------------------------|:---------------------|
+ |:----------------------------- |:--------------------- |
  |  MicManager.MODE_DEFAULT     |  默认状态            |
  |  MicManager.MODE_OUT_MIC     |  边录边播模式        |
  |  MicManager.MODE_RECORD_FILE |  录音保存至文件模式   |
